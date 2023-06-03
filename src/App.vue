@@ -12,6 +12,15 @@ const TaskList = ref([
 
 const addTask = () => {
   TaskList.value.unshift(newTask)
+
+  const precio = [20,32,5]
+  let total = 0
+  for (let i=0; i< precio.length; i++)
+  {
+    total = total + precio [i]
+  }
+console.log('Todo suma', total)
+
 }
 
 const deletefromarray= (index) => {
